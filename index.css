@@ -49,6 +49,25 @@ body {
 
 /* General ended */
 
+/* cursor started here  */
+#following-cursor {
+    position: fixed;
+    height: 2.2vw;
+    width: 2.2vw;
+    border-radius: 50%;
+    border: 1px solid var(--text-colour);
+    /* background-color: var(--text-colour); */
+    pointer-events: none;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: hard-light;
+}
+
+/* cursor ended here */
+
+
 /* Loader started */
 #loader {
     height: 100%;
@@ -166,14 +185,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #nav-links {
     display: flex;
     gap: 3vw;
 }
-#nav-links h5{
+
+#nav-links h5 {
     font-size: 0.8vw;
     font-weight: 200;
     font-family: 'Plain-Light', serif;
+    cursor: pointer;
 }
 
 /* page 1 ended here */

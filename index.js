@@ -3,6 +3,15 @@ const timeline = gsap.timeline();
 const loaderCount = document.querySelector('#loader .line h5');
 const nowHeading = document.querySelector('.line h2');
 
+const mainPageAnimation = () =>{
+    timeline.from("#page1 #nav",{
+        opacity:0,
+        duration:0.5,
+        delay:0.5
+    })
+};
+
+
 const startCounting = () => {
     let count = 0;
 
@@ -33,16 +42,16 @@ const loaderInitiated = () => {
         opacity: 1,
         duration: 0.3,
         onComplete: startCounting
-    })
+    });
 
     timeline.to('#loader', {
         y: '-100%',
         duration: 0.5,
         delay: 5,
         display: 'none'
-    })
+    });
 
-  
+    mainPageAnimation();
 }
 
 loaderInitiated();
