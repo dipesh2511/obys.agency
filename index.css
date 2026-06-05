@@ -112,7 +112,7 @@ body {
         color: white;
         font-weight: 500;
     }
-    
+
     48% {
         opacity: 0;
         font-family: 'Plain-Light', sans-serif;
@@ -128,7 +128,7 @@ body {
         -webkit-text-stroke: 2px rgb(255, 255, 255);
         font-weight: 500;
     }
-    
+
     100% {
         opacity: 0;
         font-family: 'Silk Serif Light Italic', serif;
@@ -144,11 +144,34 @@ body {
 
 /* Main started */
 
+
+/* page 1 started here */
 #page1 {
     height: 100vh;
     width: 100%;
-    background-color: orange;
+    background-color: #151515;
 }
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2vw 5vw;
+}
+
+#nav-logos {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+#nav-links {
+    display: flex;
+    gap: 3vw;
+}
+
+/* page 1 ended here */
 
 #page2 {
     height: 100vh;
