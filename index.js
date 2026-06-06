@@ -3,7 +3,7 @@ const main = document.querySelector('#main');
 const loaderCount = document.querySelector('#loader .line h5');
 const nowHeading = document.querySelector('.line h2');
 
-document.body.style.overflow = 'hidden'; // using to hide the scroll bar when the loader is active
+// document.body.style.overflow = 'hidden'; // un comment this using to hide the scroll bar when the loader is active
 
 const mainPageAnimation = () => {
 
@@ -12,6 +12,13 @@ const mainPageAnimation = () => {
         duration: 0.5,
         delay: 0.5
     })
+    timeline.from('#hero-main h1', {
+        y: 200,
+        opacity: 0,
+        duration: 0.5,
+        delay: 0.5,
+        stagger: 0.3
+    });
 };
 
 
@@ -58,7 +65,8 @@ const loaderInitiated = () => {
         }
     });
 
-    mainPageAnimation();
+    // mainPageAnimation();
 }
 
+mainPageAnimation(); // remove from here
 loaderInitiated();
