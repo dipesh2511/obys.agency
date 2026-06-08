@@ -1,22 +1,22 @@
 @font-face {
     font-family: 'Plain-Light';
-    src: url('./font/plain-light-webfont.ttf') format('truetype');
+    src: url('../../font/plain-light-webfont.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Plain-Regular';
-    src: url('./font/plain-regular-webfont.ttf') format('truetype');
+    src: url('../../font/plain-regular-webfont.ttf') format('truetype');
 
 }
 
 @font-face {
     font-family: 'Silk Serif';
-    src: url('./font/silkserif-regularitalic-webfont.ttf') format('truetype');
+    src: url('../../font/silkserif-regularitalic-webfont.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Silk Serif Light Italic';
-    src: url('./font/silkserif-lightitalic-webfont.ttf') format('truetype');
+    src: url('../../font/silkserif-lightitalic-webfont.ttf') format('truetype');
 }
 
 /* General */
@@ -59,7 +59,7 @@ body {
     border: 1px solid var(--text-colour);
     /* background-color: var(--text-colour); */
     pointer-events: none;
-    z-index: 2;
+    z-index: 5;
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
@@ -278,7 +278,7 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    z-index: 4;
+    z-index: 10;
 }
 
 #video-overlay {
@@ -287,9 +287,9 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url('./assets/image/mainimage.jpg') no-repeat center center;
+    background: url('../../assets/image/mainimage.jpg') no-repeat center center;
     background-size: cover;
-    z-index: 3;
+    z-index: 15;
 }
 
 #video-play-btn {
@@ -297,7 +297,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 20;
     height: 4.5vw;
     width: 4.5vw;
     border-radius: 50%;
