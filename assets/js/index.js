@@ -3,7 +3,7 @@ const main = document.querySelector('#main');
 const loaderCount = document.querySelector('#loader .line h5');
 const nowHeading = document.querySelector('.line h2');
 
-// document.body.style.overflow = 'hidden'; // un comment this using to hide the scroll bar when the loader is active
+document.body.style.overflow = 'hidden'; // un comment this using to hide the scroll bar when the loader is active
 
 const mainPageAnimation = () => {
 
@@ -65,8 +65,8 @@ const loaderInitiated = () => {
         }
     });
 
-    // mainPageAnimation();
+    mainPageAnimation();
 }
 
-mainPageAnimation(); // remove from here
+// mainPageAnimation(); // remove from here
 loaderInitiated();
