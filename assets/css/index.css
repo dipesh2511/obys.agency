@@ -30,6 +30,7 @@
     --font-silk: 'Silk Serif', serif;
     --font-silk-light: 'Silk Serif Light Italic', serif;
     --page-colour: #151515;
+    --blue-container: #3f7df4;
 }
 
 
@@ -287,7 +288,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url('../../assets/image/mainimage.jpg') no-repeat center center;
+    background: url('../../assets/image/mainimage.png') no-repeat center center;
     background-size: cover;
     z-index: 15;
 }
@@ -295,7 +296,7 @@ body {
 #video-play-btn {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
     z-index: 20;
     height: 4.5vw;
@@ -321,10 +322,150 @@ body {
 #page3 {
     height: 100vh;
     width: 100%;
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 
 /* page 3 ended here  */
 
+/* page 4 started here  */
+
+#page4 {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: top;
+    position: relative;
+    /* background-color: cyan; */
+}
+
+#page4-content {
+    /* height: 60vh; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+}
+
+#page4-content div h1 {
+    position: relative;
+    font-size: 7.5vw;
+    font-weight: 600;
+    font-family: 'Plain-Light', serif;
+    text-transform: uppercase;
+    line-height: 1;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 100%;
+}
+
+#page4-content div h1::before {
+    content: '03';
+    position: absolute;
+    left: -10%;
+    font-size: 3vw;
+    font-weight: 50;
+    font-family: 'Silk Serif', serif;
+}
+
+#page4-content .underline {
+    display: inline-block;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+#page4-content .page4-para p {
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: 'Plain-Light', serif;
+    line-height: 1.2;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    width: 50%;
+}
+
+#page4-hero-container {
+    width: 100%;
+    margin-top: -8vh;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 1vw;
+}
+
+#page4-hero-image-container {
+    width: 50%;
+    height: 90vh;
+    background: url('../image/bookimage.avif');
+    background-color: pink;
+}
+
+#page4-hero-para {
+    width: 20%;
+}
+
+#page4-hero-para p {
+    font-size: 0.9vw;
+    font-family: var(--font-light);
+    font-weight: 300;
+    margin-bottom: 1vw;
+}
+
+#page4-blue-container {
+    height: auto;
+    min-height: 70vh;
+    width: 50%;
+    background-color: var(--blue-container);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translate(50%, -50%);
+}
+
+#page4-blue-container .blue-container-row {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 4vh;
+}
+
+
+#page4-blue-container .blue-container-row h5 {
+    font-size: 1.4vw;
+    font-weight: 200;
+    width: 50%;
+}
+
+#page4-blue-container .blue-container-row p {
+    font-size: 0.8vw;
+    width: 40%;
+}
+
+#page4-hero-underline {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    border-top: 1px solid white;
+    cursor: pointer;
+    top: 90%;
+    margin-top: 1vw;
+}
+
+/* page 4 ended here  */
+
+/* page 5 started here */
+#page5 {
+    height: 100vh;
+    width: 100%;
+}
+
+/* page 5 ended here  */
 
 /* Main ended */
