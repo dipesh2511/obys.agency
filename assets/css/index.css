@@ -396,6 +396,7 @@ body {
     flex-wrap: wrap;
     height: auto;
     gap: 1vw;
+    position: relative;
 }
 
 #page4-hero-image-container {
@@ -454,8 +455,7 @@ body {
     position: absolute;
     border-top: 1px solid white;
     cursor: pointer;
-    top: 90%;
-    margin-top: 1vw;
+    top: 87%;
 }
 
 /* page 4 ended here  */
